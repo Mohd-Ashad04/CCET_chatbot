@@ -1,0 +1,1174 @@
+{
+  "intents": [
+    {
+      "intent": "goodbye",
+      "text": [
+        "cya",
+        "see you",
+        "bye bye",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Bye",
+        "Have a Good day",
+        "talk to you later",
+        "ttyl",
+        "i got to go",
+        "gtg",
+        "catch you later",
+        "bye for now",
+        "peace out",
+        "farewell"
+      ],
+      "responses": [
+        "Sad to see you go :(",
+        "Talk to you later!",
+        "Goodbye!",
+        "Come back soon!",
+        "Take care!"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "LeavingUserRequest",
+        "clear": false
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "creator",
+      "text": [
+        "what is the name of your developers",
+        "what is the name of your creators",
+        "what is the name of the developers",
+        "what is the name of the creators",
+        "who created you",
+        "your developers",
+        "your creators",
+        "who are your developers",
+        "developers",
+        "you are made by",
+        "you are made by whom",
+        "who create you",
+        "who made you",
+        "who designed you"
+      ],
+      "responses": [
+        "Janvi Sharma (CCET)",
+        "Varun Goyal (HOD of Applied Science)"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "AskingCreator",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "build",
+      "text": [
+        "what is the name of your developers",
+        "what is the name of your creators",
+        "what is the name of the developers",
+        "what is the name of the creators",
+        "who created you",
+        "your developers",
+        "your creators",
+        "who are your developers",
+        "developers",
+        "you are made by",
+        "you are made by whom",
+        "who create you",
+        "who made you",
+        "who designed you"
+      ],
+      "responses": [
+        "CCET college students"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "AskingCreator",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "name",
+      "text": [
+        "name",
+        "your name",
+        "do you have a name",
+        "what are you called",
+        "what is your name",
+        "what should I call you",
+        "whats your name?",
+        "who are you",
+        "who is this",
+        "what am I chatting to",
+        "who am I talking to"
+      ],
+      "responses": [
+        "You can call me JanviGPT.",
+        "I'm Mind Reader.",
+        "I am a chatbot.",
+        "I am your helper."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "AskingMyName",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "thanks",
+      "text": [
+        "thank you",
+        "thanks",
+        "thx",
+        "thank u",
+        "appreciate it",
+        "thanks a lot",
+        "thank you so much",
+        "many thanks",
+        "cheers",
+        "big thanks"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "Happy to help!",
+        "Anytime!",
+        "Glad I could assist!"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "UserThanks",
+        "clear": false
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "complaint",
+      "text": [
+        "I have a complaint",
+        "this is not working",
+        "this is wrong",
+        "something is broken",
+        "I am not happy",
+        "this is bad",
+        "I don’t like this",
+        "why is this not working"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Can you please explain the issue?",
+        "I apologize for the inconvenience. How can I assist you?",
+        "Oh no! Let me try to fix that for you."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "UserComplaint",
+        "clear": false
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "about",
+      "text": [
+        "Tell me about CCET",
+        "What is CCET?",
+        "Give me details about CCET",
+        "Where is CCET located?",
+        "Courses offered at CCET",
+        "Available programs at CCET",
+        "How can I apply to CCET?",
+        "Admission process at CCET",
+        "Eligibility criteria for CCET admissions",
+        "Does CCET have a hostel?",
+        "Facilities available at CCET"
+      ],
+      "responses": [
+        "Chandigarh College of Engineering and Technology (CCET) is a premier engineering institution offering undergraduate and postgraduate programs in various disciplines. \n\n📍 **Location:** Chandigarh,sec 26, India\n🎓 **Courses Offered:** B.Tech in Civil, Mechanical, CSE, ECE.\n🏫 **Facilities:** Modern classrooms, well-equipped labs, hostels, library, sports complex, and research centers.\n📢 **Admissions:** Based on JEE (for B.Tech) . \n\nFor more details, visit: <a target=\"_blank\" href=\"https://www.ccet.ac.in\">CCET Official Website</a>."
+      ]
+    },
+    {
+      "intent": "joke",
+      "text": [
+        "tell me a joke",
+        "make me laugh",
+        "say something funny",
+        "give me a joke",
+        "make a joke"
+      ],
+      "responses": [
+        "Why did the computer catch a cold? Because it left its Windows open!",
+        "Parallel lines have so much in common. Its a shame theyll never meet!"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "UserWantsJoke",
+        "clear": false
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "weather",
+      "text": [
+        "what's the weather like",
+        "is it raining",
+        "how's the weather",
+        "what's the temperature",
+        "tell me the forecast",
+        "will it rain today",
+        "is it sunny"
+      ],
+      "responses": [
+        "I can’t check real-time weather, but you can check a weather website for updates!",
+        "You might want to check your local forecast for real-time updates."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "UserAsksWeather",
+        "clear": false
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "college_hours",
+      "text": [
+        "What are the college hours?",
+        "When does the college open?",
+        "What time does the college start?",
+        "When is the college open?",
+        "What are the working days?",
+        "Are you open on weekends?",
+        "Tell me about the college timings.",
+        "What are the hours of operation?"
+      ],
+      "responses": [
+        "The college is open from 9:30 AM to 5:30 PM, Monday to Friday."
+      ],
+      "context": {
+        "in": "",
+        "out": "CollegeTimings",
+        "clear": true
+      }
+    },
+    {
+      "intent": "number",
+      "text": [
+        "more info",
+        "contact info",
+        "how to contact college",
+        "college telephone number",
+        "college number",
+        "What is your contact no",
+        "Contact number?",
+        "how to call you",
+        "College phone no?",
+        "how can i contact you",
+        "Can i get your phone number",
+        "how can i call you",
+        "phone number",
+        "phone no",
+        "call"
+      ],
+      "responses": [
+        "You can contact at: +91-172-2750872,+91-172-2750943"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "ContactRequest",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "seats",
+      "text": [
+        "How many seats are available in each branch?",
+        "What is the seat intake for different courses?",
+        "How many students are admitted per year?",
+        "What is the total number of seats in CCET?",
+        "How many seats are there in CSE, ECE, Civil, and Mechanical?"
+      ],
+      "responses": [
+        "CCET offers a total of 300 seats for B.E. programs:\n- Computer Science & Engineering: 75 seats\n- Electronics & Communication Engineering: 75 seats\n- Civil Engineering: 75 seats\n- Mechanical Engineering: 75 seats\nFor more details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/admission-guidelines\">here</a>."
+      ]
+    },
+    {
+      "intent": "courses",
+      "text": [
+        "list of courses",
+        "list of courses offered",
+        "list of courses offered in",
+        "what are the courses offered in your college?",
+        "courses?",
+        "courses offered",
+        "courses offered in CCET",
+        "courses you offer",
+        "branches?",
+        "courses available at CCET?",
+        "branches available at your college?",
+        "what are the courses in CCET?",
+        "what are branches in CCET?",
+        "what courses are there in CCET?",
+        "branches available in CCET?",
+        "can you tell me the courses available in CCET?",
+        "can you tell me the branches available in CCET?",
+        "computer engineering?",
+        "computer",
+        "Computer engineering?",
+        "it",
+        "IT",
+        "Information Technology",
+        "AI/ML",
+        "Mechanical engineering",
+        "Chemical engineering",
+        "Civil engineering"
+      ],
+      "responses": [
+        "Chandigarh College of Engineering and Technology (CCET) offers the following Bachelor of Engineering (B.E.) courses:\n- Computer Science & Engineering (CSE): 75 seats\n- Electronics and Communication Engineering (ECE): 75 seats\n- Civil Engineering (CE): 75 seats\n- Mechanical Engineering (ME): 75 seats\n\nFor more details, please visit: https://ccet.ac.in/degreeCourse.php"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "AskingCourses",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "fees",
+      "text": [
+        "information about fee",
+        "information on fee",
+        "tell me the fee",
+        "college fee",
+        "fee per semester",
+        "what is the fee of each semester",
+        "what is the fees of each year",
+        "what is fee",
+        "what is the fees",
+        "how much is the fees",
+        "fees for first year",
+        "fees",
+        "about the fees",
+        "tell me something about the fees",
+        "What is the fees of hostel",
+        "how much is the fees",
+        "hostel fees",
+        "fees for AC room",
+        "fees for non-AC room",
+        "fees for Ac room for girls",
+        "fees for non-Ac room for girls",
+        "fees for Ac room for boys",
+        "fees for non-Ac room for boys"
+      ],
+      "responses": [
+        "For Fee details, visit <a target=\"_blank\" href=\"http://ccet.ac.in/fees-structure\">here</a>."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "FeeStructure",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "location",
+      "text": [
+        "where is the college located",
+        "college is located at",
+        "where is college",
+        "where is college located",
+        "address of college",
+        "how to reach college",
+        "college location",
+        "college address",
+        "wheres the college",
+        "how can I reach college",
+        "whats is the college address",
+        "what is the address of college",
+        "address",
+        "location"
+      ],
+      "responses": [
+        "You can find the college location on Google Maps <a target=\"_blank\" href=\"https://goo.gl/maps/8zErV7xnJKL2\">here</a>."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "AddressOfCollege",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "hostel",
+      "text": [
+        "Is there a hostel at CCET?",
+        "What are the hostel facilities at CCET?",
+        "Does CCET provide hostel accommodation?",
+        "How can I apply for a hostel at CCET?",
+        "What is the hostel fee structure at CCET?",
+        "Are there separate hostels for boys and girls?"
+      ],
+      "responses": [
+        "CCET provides hostel facilities for both boys and girls. The hostels have well-furnished rooms, mess facilities, recreational areas, and 24/7 security. Students can apply for hostel accommodation through the official college website. For fee details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/hostel\">here</a>."
+      ]
+    },
+    {
+      "intent": "holidays",
+      "text": [
+        "How are holidays decided at CCET?",
+        "What is the holiday schedule at CCET?",
+        "Does CCET follow Panjab University’s holiday calendar?",
+        "Where can I find the list of holidays for CCET?"
+      ],
+      "responses": [
+        "The holiday schedule at CCET is based on the **Chandigarh Administration's official holiday list** and **Panjab University’s academic calendar**. The schedule includes all Sundays, Saturdays, and government-declared holidays such as Republic Day, Diwali, Holi, and Independence Day. The **academic calendar is prepared once Panjab University releases its official schedule**. For the latest holiday list, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/academic-calendar\">here</a>."
+      ]
+    },
+    {
+      "intent": "event",
+      "text": [
+        "events organised",
+        "list of events",
+        "list of events organised in college",
+        "list of events conducted in college",
+        "What events are conducted in college",
+        "Are there any events held at college",
+        "Events?",
+        "functions",
+        "what are the events",
+        "tell me about events",
+        "what about events"
+      ],
+      "responses": [
+        "For event details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/events\"> here</a>"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "EventRelatedQueries",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "documents",
+      "text": [
+        "What documents are required for admission?",
+        "Documents needed for admission",
+        "Required documents for CCET admission",
+        "Which documents should I bring for admission?",
+        "Documents checklist for admission"
+      ],
+      "responses": [
+        "The documents required for admission at CCET are:\n- JEE Main Admit Card and Scorecard\n- 10th and 12th Mark Sheets and Passing Certificates\n- Character Certificate from the last attended institution\n- Migration Certificate (if applicable)\n- Category Certificate (SC/ST/OBC/EWS) if applicable\n- Domicile Certificate\n- Medical Fitness Certificate\n- Anti-Ragging Affidavit (Student and Parent/Guardian)\n- Passport-size Photographs\n- Proof of Fee Payment\nFor detailed information, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/admission-guidelines\">here</a>."
+      ]
+    },
+    {
+      "intent": "faculty",
+      "text": [
+        "How many faculty members are there in each branch?",
+        "Number of faculty in each department",
+        "Faculty strength in different branches"
+      ],
+      "responses": [
+        "The number of faculty members in each department is as follows:\n- Computer Science & Engineering: 12\n- Electronics & Communication Engineering: 11\n- Civil Engineering: 7\n- Mechanical Engineering: 8"
+      ]
+    },
+    {
+      "intent": "faculty_cse",
+      "text": [
+        "Who are the faculty members of the CSE department?",
+        "List of faculty members in CSE?",
+        "name the faculty members of cse",
+        "Who teaches in the CSE department?"
+      ],
+      "responses": [
+        "Here are the faculty members of the **Computer Science & Engineering (CSE) Department**:\n- Dr. M.S. Gujral (Professor & Principal) - Computer Networks & Information Security\n- Dr. Sunil K. Singh (Professor & HOD) - HPC, Data Mining, IoT, Machine Learning\n- Dr. R.B. Patel (Professor) - Mobile & Distributed Computing, Sensor Networks\n- Dr. Varun Gupta (Professor) - Deep Learning, Big Data Analytics\n\nFor more details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/faculty\">here</a>."
+      ]
+    },
+    {
+      "intent": "faculty_ece",
+      "text": [
+        "Who are the faculty members of the ECE department?",
+        "name the faculty members of ece",
+        "List of faculty members in ECE?",
+        "Who teaches in the ECE department?"
+      ],
+      "responses": [
+        "Here are the faculty members of the **Electronics & Communication Engineering (ECE) Department**:\n- Dr. Davinder Singh Saini (Professor & HOD) - MIMO, OFDM, Wireless Networks\n- Dr. Bhasker Gupta (Professor) - Wireless Communication, FPGA System Design\n- Dr. Krishna Gopal Sharma (Professor) - Low Power VLSI Design\n\nFor more details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/faculty\">here</a>."
+      ]
+    },
+    {
+      "intent": "faculty_mechanical",
+      "text": [
+        "Who are the faculty members of the Mechanical Engineering department?",
+        "name the faculty members of mech",
+        "List of faculty members in Mechanical?",
+        "Who teaches in the Mechanical department?"
+      ],
+      "responses": [
+        "Here are the faculty members of the **Mechanical Engineering (ME) Department**:\n- Dr. Jatinder Madan (Professor & HOD) - Sustainable Design, CAD/CAM\n- Dr. Vettivel S.C (Associate Professor) - Powder Metallurgy, Nano Composite\n- Dr. Radhey Sham (Assistant Professor) - Thermal Engineering, IC Engines\n\nFor more details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/faculty\">here</a>."
+      ]
+    },
+    {
+      "intent": "faculty_civil",
+      "text": [
+        "Who are the faculty members of the Civil Engineering department?",
+        "name the faculty members of civil",
+        "List of faculty members in Civil?",
+        "Who teaches in the Civil department?"
+      ],
+      "responses": [
+        "Here are the faculty members of the **Civil Engineering (CE) Department**:\n- Dr. Rajesh Kumar (Professor & HOD) - Structural Engineering, Recycled Concrete\n- Dr. Aradhana Mehta (Associate Professor) - Structural Engineering, Concrete Technology\n- Er. Mohammad Sakib Perwez Khan (Assistant Professor) - Structural Engineering, CAD\n\nFor more details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/faculty\">here</a>."
+      ]
+    },
+    {
+      "intent": "department_hod",
+      "text": [
+        "Who are the HODs of all departments",
+        "List of department heads in CCET?",
+        "Who is the head of each department?",
+        "Department heads at CCET?",
+        "HOD of all branches"
+      ],
+      "responses": [
+        "Here are the HODs of all departments at CCET:\n- **Computer Science & Engineering (CSE):** Dr. Sunil K. Singh\n- **Electronics & Communication Engineering (ECE):** Dr. Davinder Singh Saini\n- **Civil Engineering (CE):** Dr. Rajesh Kumar\n- **Mechanical Engineering (ME):** Dr. Jatinder Madan\n- **Applied Science:** Dr. Varun Gupta\n\nFor contact details and office locations, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/faculty\">here</a>."
+      ]
+    },
+    {
+      "intent": "floors",
+      "text": [
+        "size of campus",
+        "building size",
+        "How many floors does the college have",
+        "floors in college",
+        "how tall is CCET's College of Engineering building",
+        "floors"
+      ],
+      "responses": [
+        "My College has a total of 3 floors."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "FloorQueries",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "syllabus",
+      "text": [
+        "Syllabus for IT",
+        "what is the Information Technology syllabus",
+        "syllabus",
+        "timetable",
+        "what is the syllabus",
+        "syllabus",
+        "What is the next lecture"
+      ],
+      "responses": [
+        "To know about the syllabus, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/syllabus\"> here</a>"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "SyllabusQueries",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "library",
+      "text": [
+        "is there any library",
+        "library facility",
+        "library facilities",
+        "do you have library",
+        "does the college have library facility",
+        "college library",
+        "where can i get books",
+        "book facility",
+        "Where is library",
+        "Library",
+        "Library information",
+        "Library books information",
+        "Tell me about library",
+        "how many libraries"
+      ],
+      "responses": [
+        "There is one huge and spacious library with a variety of resources. The timings are 9:30 AM to 5:30 PM, and for more details, visit <a target=\"_blank\" href=\"https://www.ccet.ac.in/library.html\">here</a>"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "LibraryHours",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "labs",
+      "text": [
+        "How many blocks does CCET have?",
+        "Tell me about the campus infrastructure of CCET?",
+        "What facilities are available in different blocks?",
+        "How many classrooms are there in CCET?",
+        "What are the different blocks in CCET?"
+      ],
+      "responses": [
+        "CCET has various functional zones, including Academic and Administrative Blocks. The campus includes spacious lecture halls, tutorial rooms, drawing halls, an auditorium, a library, a computer center, reading rooms, workshops, and well-equipped laboratories. Hostel facilities are available for both boys and girls."
+      ]
+    },
+    {
+      "intent": "department_labs",
+      "text": [
+        "How many labs are there in each department?",
+        "List of laboratories available in CCET?",
+        "What labs are available in the CSE department?",
+        "What facilities are available in the ECE labs?"
+      ],
+      "responses": [
+        "CCET has well-equipped laboratories for practical learning.\n- **Computer Science & Engineering:** AI & Data Mining Lab, Software Engineering Lab, Networking Lab, Web Technology Lab, and more.\n- **Electronics & Communication Engineering:** Digital Image Processing Lab, Wireless Communication Lab, VLSI Lab, and more.\n- **Mechanical Engineering:** CAD/CAM Lab, Robotics Lab, and Thermal Engineering Lab.\n- **Civil Engineering:** Concrete Technology Lab, Structural Analysis Lab, and Geotechnical Lab."
+      ]
+    },
+    {
+      "intent": "evaluation",
+      "text": [
+        "How is grading done at CCET?",
+        "What is the evaluation system at CCET?",
+        "How are internal and external marks calculated?",
+        "What is the grading scale used at CCET?"
+      ],
+      "responses": [
+        "CCET follows a continuous evaluation system:\n- **Internal Assessment: 30% weightage (Minor-1 and Minor-2, assignments, quizzes, attendance).\n- End Semester Examination: 50% weightage.\n- Final grading: Based on SGPA and CGPA system.\n- Students must secure at least 20% in End Semester Examination to pass a subject.\n- Attendance below 75% results in penalties or F grade."
+      ]
+    },
+    {
+      "intent": "infrastructure",
+      "text": [
+        "how is college infrastructure",
+        "infrastructure",
+        "college infrastructure"
+      ],
+      "responses": [
+        "Our University has excellent infrastructure. The campus is clean, equipped with modern facilities, and has good labs with high-speed internet connections.There are 4 blocks in our college 'Block A' is for applied Science,CSE and ECE ,'Block B' is for mech. and civil branch . 'Block E is for workshops and 'block c' is for library,seminarhalls and academic cell"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "Infra",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "canteen",
+      "text": [
+        "food facilities",
+        "canteen facilities",
+        "canteen facility",
+        "is there any canteen",
+        "Is there a cafeteria in college",
+        "Does college have canteen",
+        "Where is canteen",
+        "where is cafeteria",
+        "canteen",
+        "Food",
+        "Cafeteria"
+      ],
+      "responses": [
+        "Our university has a canteen with a variety of food available for students."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "Snacking",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "menu",
+      "text": [
+        "food menu",
+        "food in canteen",
+        "What's there on the menu",
+        "what is available in college canteen",
+        "what foods can we get in college canteen",
+        "food variety",
+        "What is there to eat?"
+      ],
+      "responses": [
+        "We serve a variety of items including noodles, juices, Aloo-Puri, samosa, snadwich, Thali, and many more on the menu."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "Menu",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "scholarship",
+      "text": [
+        "What scholarships are available at CCET?",
+        "Scholarship options for students",
+        "Financial aid for students",
+        "Scholarship programs at CCET",
+        "Merit-based scholarships",
+        "Need-based scholarships",
+        "Does CCET offer scholarships?"
+      ],
+      "responses": [
+        "CCET offers multiple scholarships including:\n- **Merit-Cum-Means Scholarships**: Awarded based on academic performance and financial need. Family income must not exceed ₹18,000 per year, and students must maintain at least 60% marks.\n- **Government Necessitous Scholarships**: Financial aid for students from economically weaker backgrounds.\n- **Chandigarh Union Territory Merit-Cum-Means Scholarships**: Provided based on merit from semester results.\n- **Free Education for Meritorious SC/OBC Students**: Covers tuition fees, annual allowances, and travel reimbursements.\n- **Tuition Fee Waiver Scheme for Economically Weaker Sections (EWS)**: Full tuition fee exemption for students with family income under ₹8 lakh per year.\nFor more details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/scholarships\">here</a>."
+      ]
+    },
+    {
+      "intent": "placement",
+      "text": [
+        "How is the placement at CCET?",
+        "Placement record of CCET",
+        "Training and placement details"
+      ],
+      "responses": [
+        "CCET has a dedicated Training and Placement Cell that collaborates with top companies for recruitment, internships, and industrial training. To know more about placements, visit <a target=\"_blank\" href=\"https://www.ccet.ac.in/placement.html\">here</a>"
+      ]
+    },
+    {
+      "intent": "ccet_accreditation",
+      "text": [
+        "Is CCET NBA accredited?",
+        "Is CCET affiliated with AICTE?",
+        "What accreditations does CCET have?",
+        "Is CCET recognized by the government?",
+        "What approvals does CCET hold?",
+        "Is CCET affiliated with Panjab University?"
+      ],
+      "responses": [
+        "Chandigarh College of Engineering and Technology (CCET) Degree Wing is approved by the **All India Council for Technical Education (AICTE)** and affiliated with **Panjab University (PU), Chandigarh**. The institute follows the academic guidelines issued by PU and adheres to AICTE norms. It has received accreditation from **NBA (National Board of Accreditation)** for its engineering programs, ensuring high-quality education and industry relevance. The college is a government institute under the **UT Administration of Chandigarh**. For more details, visit <a target=\"_blank\" href=\"http://www.ccetchd.edu.in/accreditation\">here</a>."
+      ]
+    },
+    {
+      "intent": "ragging",
+      "text": [
+        "What is the anti-ragging policy at CCET?",
+        "Rules against ragging",
+        "Anti-ragging measures in college"
+      ],
+      "responses": [
+        "CCET follows a strict anti-ragging policy as per UGC guidelines. Ragging is strictly prohibited and punishable under law."
+      ]
+    },
+    {
+      "intent": "ragging",
+      "text": [
+        "What is the anti-ragging policy at CCET?",
+        "Rules against ragging",
+        "Anti-ragging measures in college"
+      ],
+      "responses": [
+        "CCET follows a strict anti-ragging policy as per UGC guidelines. Ragging is strictly prohibited and punishable under law."
+      ]
+    },
+    {
+      "intent": "hod of cse",
+      "text": [
+        "Who is computer science HOD",
+        "Where is computer science HOD",
+        "who is hod of cse",
+        "computer science HOD",
+        "name of computer science HOD",
+        "tell me about the hod of cse"
+      ],
+      "responses": [
+        "The Head of the Computer Engineering Department is Dr. Sunil k Singh, who is available in the Computer Engineering Department (third floor)(A block)"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "ComputerHOD",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "extchod",
+      "text": [
+        "Who is EXTC HOD",
+        "Where is EXTC HOD",
+        "EXTC HOD",
+        "name of EXTC HOD"
+      ],
+      "responses": [
+        "Different departments have different Heads. Please specify your department for more information."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "DiffHODs",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "admission",
+      "text": [
+        "What are the minimum eligibility criteria for admission?",
+        "Tell me about the admission criteria.",
+        "What qualifications do I need to get admitted?",
+        "What are the eligibility requirements for engineering courses?",
+        "How can I apply for admission?",
+        "What marks are required for admission?",
+        "Tell me about admission for B.E.",
+        "What is the eligibility for lateral entry admission?",
+        "What are the criteria for B.E. and Integrated B.E. admission?"
+      ],
+      "responses": [
+        "The admission criteria are as follows:\n\n1. **First Semester Admission:** Candidates must have passed the 10+2 examination with Physics and Mathematics as compulsory subjects along with one of the following: Chemistry, Biotechnology, Computer Science, or Biology. A minimum of 60% marks in the qualifying examination (+2) is required, except for SC/ST/Physically Handicapped categories, which require 55%.\n\n2. **JEE (Mains):** Admission is based on the merit of JEE (Mains) conducted by CBSE.\n\n3. **Second Year (Lateral Entry):** Candidates must have passed a 3-year Diploma from a recognized State Board of Technical Education with 60% marks. Admission will be based on merit obtained in the Entrance Examination conducted by Panjab University."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "AdmissionCriteria",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "cse_hod",
+      "text": [
+        "Who is the hod of Computer Science",
+        "Details about CSE head",
+        "who is the hod of cse",
+        "CSE department faculty"
+      ],
+      "responses": [
+        "Dr. Sunil K. Singh, Professor & HOD, BE, ME, PhD. Interests: Reconfigurable Computing, Embedded Systems, Linux. Contact: 9818182457. Email: sksingh@ccet.ac.in."
+      ],
+      "context": {
+        "in": "",
+        "out": "CSEHead",
+        "clear": true
+      }
+    },
+    {
+      "intent": "civil_head",
+      "text": [
+        "Who is the hod of Civil Engineering",
+        "Civil Engineering head",
+        "who is the hos of civil",
+        "Contact for Civil Engineering HOD"
+      ],
+      "responses": [
+        "Dr. Rajesh Kumar is the HOD of Civil Engineering. He holds a BE, ME, and PhD with interests in Structural Analysis & Design, SCC, and RAC. Contact: 9478548248. Available at Room No.-305B, Block-B, CCET (Degree Wing)."
+      ],
+      "context": {
+        "in": "",
+        "out": "Civil_HOD",
+        "clear": true
+      }
+    },
+    {
+      "intent": "mechanical_head",
+      "text": [
+        "Who is the hod of Mechanical Engineering",
+        "who is the hod of mech",
+        "Mechanical Engineering head",
+        "Contact for Mechanical Engineering HOD"
+      ],
+      "responses": [
+        "Dr. Jatinder Madan is the HOD of Mechanical Engineering. He holds a BE, ME, and PhD with interests in CAD CAM and Design Automation. Contact: 9041291970. Available at Room No. B 308, Mechanical Engineering Department, CCET Degree Wing."
+      ],
+      "context": {
+        "in": "",
+        "out": "Mechanical_HOD",
+        "clear": true
+      }
+    },
+    {
+      "intent": "ece_hod",
+      "text": [
+        "Who is the HOD of Electronics & Communication Engineering?",
+        "who is hod of ece",
+        "ECE HOD details",
+        "who is the hod of ece",
+        "Electronics and Communication department head",
+        "Contact for ECE HOD"
+      ],
+      "responses": [
+        "Dr. Davinder Singh Saini is the HOD of Electronics & Communication Engineering. He holds a BE, ME, and PhD with interests in Wireless Communication, 4G, and MIMO-OFDM. Contact: 8146730369. Available at Room No. 315, CCET Degree Wing."
+      ],
+      "context": {
+        "in": "",
+        "out": "ECE_HOD",
+        "clear": true
+      }
+    },
+    {
+      "intent": "appliedscience_hod",
+      "text": [
+        "Who is the hod of Applied Science",
+        "Who is hod of Applied Science",
+        "Applied Science head",
+        "Contact for Applied Science HOD"
+      ],
+      "responses": [
+        "Dr. Varun Gupta is the HOD of Applied Science. He holds a BE, ME, and PhD with interests in Deep Learning, Machine Learning, and Software Engineering. Contact: 9646047091. Available at Room No. 109, Applied Science Department, CCET Degree Wing."
+      ],
+      "context": {
+        "in": "",
+        "out": "AppliedScience_HOD",
+        "clear": true
+      }
+    },
+    {
+      "intent": "principal",
+      "text": [
+        "Who is the Principal of CCET?",
+        "Who is the Principal of CCET",
+        "Contact information for the Principal",
+        "Details about the Principal of Chandigarh College of Engineering and Technology"
+      ],
+      "responses": [
+        "Dr. Manpreet Singh is the Principal of Chandigarh College of Engineering and Technology. You can contact him at principal@ccet.ac.in or call 0172-2750872."
+      ],
+      "context": {
+        "in": "",
+        "out": "Principal_Info",
+        "clear": true
+      }
+    },
+    {
+      "intent": "results",
+      "text": [
+        "How can I check my exam results?",
+        "Where can I find my semester results?",
+        "When will the results be announced?",
+        "What is the process to view my marks?"
+      ],
+      "responses": [
+        "Exam results are typically announced after the semester-end examinations. You can check your results on the official website of Panjab University (puchd.ac.in) or through the university's student portal. Major examinations are held in November/December and May/June."
+      ],
+      "context": {
+        "in": "",
+        "out": "exam_result",
+        "clear": true
+      }
+    },
+    {
+      "intent": "fee",
+      "text": [
+        "Where do I pay my college fees?",
+        "What are the payment methods for college fees?",
+        "What is the deadline for fee submission?",
+        "Can I pay my fees online?",
+        "How much is the tuition fee for this semester?"
+      ],
+      "responses": [
+        "The fee submission details, including deadlines and payment methods, are provided by the Accounts Office.The student should submit their fee through the qfix system. The tuition fee varies based on the course and category. Visit the official college website (www.ccet.ac.in) or contact the Accounts Office for more details."
+      ],
+      "context": {
+        "in": "",
+        "out": "fee_detail",
+        "clear": true
+      }
+    },
+    {
+      "intent": "form",
+      "text": [
+        "How can I submit my examination form?",
+        "Where do I submit my examination form?",
+        "What documents are needed for the exam form?",
+        "When is the last date to submit the exam form?",
+        "How can I get a copy of my submitted exam form?"
+      ],
+      "responses": [
+        "Hi there! To submit your examination form at CCET, please follow these steps:\n\n1. **Check the Deadline:** First, review the academic calendar to know the last date for form submission.\n\n2. **Obtain the Form:** Detailed instructions and the online submission portal can be found on the official CCET website at: [https://www.ccet.ac.in/admission-guidelines].. **Fill and Attach Documents:** Carefully complete the form and attach all required documents as specified in the form instructions.\n\n4. **Submit the Form:** Once completed, submit your form along with the documents to the Examination Branch before the deadline.\n\nFor detailed instructions and any updates, please check the official examination notice on the CCET website."
+      ],
+      "context": {
+        "in": "",
+        "out": "exam_form",
+        "clear": true
+      }
+    },    
+    {
+      "intent": "clubs",
+      "text": [
+        "What clubs are available at CCET?",
+        "Tell me about the official clubs at CCET",
+        "Which student clubs does the college have?",
+        "How can I join a club at CCET?",
+        "What extracurricular clubs does CCET offer?"
+      ],
+      "responses": [
+        "CCET offers a variety of official student clubs designed to promote academic, cultural, technical, and sports activities. These clubs include the Editorial Board, Speakers Club, Panache, Projection Club, Dramatics Club, Sports Club, Music Club, IT Club, and more. For detailed information on each club, including activities and registration procedures, please visit the clubs section on the CCET official website."
+      ],
+      "context": {
+        "in": "",
+        "out": "club_info",
+        "clear": true
+      }
+    },
+    {
+      "intent": "admission_process",
+      "text": [
+        "How can I apply for admission?",
+        "What is the admission process for BE courses?",
+        "Is there a lateral entry option?",
+        "What is the eligibility for admission?"
+      ],
+      "responses": [
+        "Admissions to BE programs are conducted through the Joint Admission Committee (JAC) Chandigarh. Candidates must have passed 10+2 with Physics and Mathematics as compulsory subjects. Lateral entry admissions are based on PUMEET/PULEET entrance tests."
+      ],
+      "context": {
+        "in": "",
+        "out": "addmissiion_process",
+        "clear": true
+      }
+    },
+    {
+      "intent": "course_information",
+      "text": [
+        "What courses does the college offer?",
+        "What is the syllabus for Computer Science?",
+        "How many credits do I need to pass the semester?",
+        "Can I change my branch after admission?"
+      ],
+      "responses": [
+        "The college offers BE programs in Civil, Computer Science, Electronics & Communication, and Mechanical Engineering. Each program follows a credit-based system. For detailed syllabus, visit puchd.ac.in/syllabus."
+      ],
+      "context": {
+        "in": "",
+        "out": "course_info",
+        "clear": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling on the main window */
+}
+.user-message, .bot-message {
+    text-align: justify;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a pseudo-element for the background image */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/static/images/campus_img.jpeg"); /* Updated path */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    filter: blur(2px); /* Apply a blur effect */
+    z-index: -1; /* Ensure the background is behind other elements */
+}
+
+.main-chatbot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height of the viewport */
+}
+
+.chat-container {
+    width: 400px;
+    margin: 5px auto;
+    background: rgba(165, 166, 127, 0.8); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    height: 90%; /* Occupy 80% of the viewport height */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+}
+
+#chatbox {
+    height:30%;
+    flex: 1; /* Allow chatbox to grow and shrink */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    overflow-y: auto; /* Allow scrolling within chatbox if necessary */
+    background-color: rgba(249, 249, 249, 0.9); /* Slightly transparent */
+}
+
+.user-message {
+    background-color: rgba(220, 248, 198, 0.9); /* Slightly transparent */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: rgba(232, 232, 232, 0.9); /* Slightly transparent */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width:20%;
+}
+.message-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.message-div input[type="text"] {
+    flex: 1; /* Makes the input field take up remaining space */
+    margin-right: 10px;
+}
+
+.message-div button {
+    width: auto; /* Ensures button doesn't take too much space */
+    white-space: nowrap; /* Prevents button text from wrapping */
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#ccet_logo {
+    height: 50px;
+    width: 50px;
+}
+
+.upper-section {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.sidebar {
+    margin: 2rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: aliceblue;
+    animation: slide 1.3s forwards 0.3s 1 ease-out;
+    background: rgba(158, 159, 156, 0.3);
+    border-radius: 20px;
+}
+@keyframes slide {
+    from {
+        transform: translateX(-300px); /* Start far off-screen */
+    }
+    to {
+        transform: translateX(0); /* Move to its final position */
+    }
+}
+
+ul {
+    position: relative;
+    margin: 2px 0; /* Add margin for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    width: 100%; /* Take full width of the sidebar */
+}
+
+
+li {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #007bff; /* Change border color */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 5px; /* Add padding for spacing */
+    margin: 3px 0; /* Space between list items */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    cursor: pointer; /* Change cursor to pointer */
+    width:300px;
+}
+
+li:hover {
+    background-color: rgba(29, 54, 81, 0.2); /* Highlight on hover */
+    transform: scale(1.02); /* Slightly increase size on hover */
+    color: #e1dede;
+}
+
+li:active {
+    transform: scale(0.98); /* Scale down when clicked */
+}
+
+/* Optional: Add a font style for better readability */
+li {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px; /* Font size */
+    color: #1b1a1a; /* Text color */
+    text-align: left; /* Align text to the left */
+}
+h2 {
+    color: #12263f; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the heading */
+    letter-spacing: 1px; /* Increase letter spacing */
+    overflow: hidden;
+}

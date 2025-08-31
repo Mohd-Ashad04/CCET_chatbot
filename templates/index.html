@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCET College Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="main-chatbot">
+        <div class="sidebar">
+            <h2>Most Asked Questions</h2>
+            <ul id="ques-list">
+                <li onclick="setQuestion('Anti-ragging measures in college')">Anti-ragging measures in college</li>
+                <li onclick="setQuestion('What accreditations does CCET have?')">What accreditations does CCET have?</li>
+                <li onclick="setQuestion('Department heads at CCET?')">Department heads at CCET?</li>
+                <li onclick="setQuestion('What is the evaluation system at CCET?')">What is the evaluation system at CCET?</li>
+                <li onclick="setQuestion('how is college infrastructure')">how is college infrastructure</li>
+                <li onclick="setQuestion('Which documents should I bring for admission?')">Which documents should I bring for admission?</li>
+                <li onclick="setQuestion('What courses are there in CCET?')">What courses are there in CCET?</li>
+                <li onclick="setQuestion('How is the placement at CCET?')">How is the placement at CCET?</li>
+                <li onclick="setQuestion('Tell me about the admission criteria.')">Tell me about the admission criteria.</li>
+                <li onclick="setQuestion('What scholarships are available at CCET?')">What scholarships are available at CCET?</li>
+                <li onclick="setQuestion('How many seats are available in each branch?')">How many seats are available in each branch?</li>
+            </ul>
+        </div>
+
+        <div class="chat-container">
+            <div class="upper-section">
+                <img id="ccet_logo" src="{{ url_for('static', filename='ccetLogoBlack.png') }}" alt="CCET Logo">
+                <h1>Campus Connect Bot</h1>
+            </div>
+            <div id="chatbox">
+                <div id="messages"></div>
+            </div>
+            <div class="message-div">
+                <input type="text" id="user-input" placeholder="Hi! I am the chatbot of CCET.">
+                <button type="submit" id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const sendButton = document.getElementById("send-button");
+        const userInput = document.getElementById("user-input");
+        const messagesDiv = document.getElementById("messages");
+
+        // Function to set the clicked question in the input field and send it
+        function setQuestion(question) {
+            userInput.value = question; 
+            sendMessage(question); 
+        }
+
+        // Function to format response text with proper bullet points and new lines
+        function formatResponse(response) {
+            let formattedText = response
+                .replace(/\n/g, "<br>") // Convert new lines to <br>
+                .replace(/(\d+\.)\s/g, "<br>$1 ") // Format numbered lists (1., 2., 3.)
+                .replace(/- /g, "<br>• "); // Format bullet points (- item)
+
+            return formattedText;
+        }
+
+        // Function to handle sending messages
+        async function sendMessage(message) {
+            if (!message.trim()) return; // Prevent sending empty messages
+
+            messagesDiv.innerHTML += `<div class="user-message">${message}</div>`;
+            userInput.value = "";
+
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message })
+            });
+
+            const data = await response.json();
+            console.log(data); // Debugging
+
+            // Format the response before displaying
+            let formattedResponse = formatResponse(data.response);
+            messagesDiv.innerHTML += `<div class="bot-message">${formattedResponse}</div>`;
+
+            // If an image is provided in the response, display it
+            if (data.image) {
+                messagesDiv.innerHTML += `<img src="${data.image}" alt="College Layout" class="chat-image">`;
+            }
+
+            messagesDiv.scrollTop = messagesDiv.scrollHeight; // Auto scroll to bottom
+        }
+
+        // Event listener for the send button
+        sendButton.addEventListener("click", () => {
+            const message = userInput.value;
+            sendMessage(message);
+        });
+
+        // Event listener for the Enter key in the input field
+        userInput.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault(); 
+                sendMessage(userInput.value);
+            }
+        });
+
+    </script>
+
+</body>
+</html>
