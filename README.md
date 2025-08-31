@@ -21,7 +21,7 @@ Here’s the chatbot homepage:
 
 ![CCET Chatbot Screenshot](C:/Users/Pc/Pictures/ccet%20chat%20bot.png)  
 
-*(When pushing to GitHub, replace this path with a relative path like `static/images/ccet_chat_bot.png` so it works online)*  
+
 
 ---
 
