@@ -19,7 +19,7 @@ A **Conversational AI Chatbot** built with **DistilBERT**, designed to help stud
 
 Here’s the chatbot homepage:  
 
-![CCET Chatbot Screenshot](C:/Users/Pc/Pictures/ccet%20chat%20bot.png)  
+![CCET Chatbot Screenshot](ccet chat bot .jpg)  
 
 
 
